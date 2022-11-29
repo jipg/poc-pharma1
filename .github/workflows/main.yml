@@ -1,9 +1,9 @@
 name: PoC linters
 
 on:
-  push:
+  pull_request:
     branches:
-      - main
+      - develop
 
 
 jobs:
@@ -13,3 +13,11 @@ jobs:
       - name: Echo message
         run: |
           echo "Bye cruel world"
+
+  the_Checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: List
+        run: ls -rlta
