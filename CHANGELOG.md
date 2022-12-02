@@ -1,3 +1,10 @@
+## v0.4.0 (2022-12-02)
+
+### Feat
+
+- **pyproject**: Add variable $version
+- **.pre-commit**: Add ymal file identifier
+
 ## 0.0.1 (2022-12-02)
 
 ### Feat
